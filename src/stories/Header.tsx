@@ -43,3 +43,5 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
 		</div>
 	</header>
 );
+// * Mejora la compatibilidad de nuestro paquete cundo se utilice este componente
+export default Header;

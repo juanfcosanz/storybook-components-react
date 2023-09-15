@@ -34,3 +34,6 @@ export const MyLabel = ({ label, size = 'normal', allCaps = false, fontColor, co
 		</span>
 	);
 };
+
+// * Mejora la compatibilidad de nuestro paquete cundo se utilice este componente
+export default MyLabel;

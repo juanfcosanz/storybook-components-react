@@ -34,3 +34,5 @@ export const Button = ({ primary = false, size = 'medium', backgroundColor, labe
 		</button>
 	);
 };
+// * Mejora la compatibilidad de nuestro paquete cundo se utilice este componente
+export default Button;
