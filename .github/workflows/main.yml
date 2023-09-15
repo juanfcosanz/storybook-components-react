@@ -26,13 +26,11 @@ jobs:
     # es cada uno de los pasos que vamos ejecutar en las tareas
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false # <--- this
+      - uses: actions/checkout@v2
 
       # tarea para descargar la version de node (para sm-ver pide la v14)
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: 18
       # tarea para instalar las dependencias de nuestro proyecto
