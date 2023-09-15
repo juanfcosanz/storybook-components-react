@@ -27,6 +27,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false # <--- this
 
       # tarea para descargar la version de node (para sm-ver pide la v14)
       - name: Setup Node.js
